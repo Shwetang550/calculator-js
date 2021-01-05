@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.calculator {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 6.5rem);
+  grid-template-rows: minmax(7.5rem, auto) repeat(5, 100px);
+}
+
+.calculator > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.calculator > button:hover {
+  background-color: white;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: red;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .prev-output {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .prev-output {
+  color: white;
+  font-size: 2.5rem;
+}
